@@ -5,36 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Interview-website</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">our requirement</a></li>
-                <li><a href="">we offer</a></li>
-                <li><a href="">contacts</a></li>
-            </ul>
-        </nav>
+        <div class="menu ">
+            <nav class="container">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">our requirement</a></li>
+                    <li><a href="">we offer</a></li>
+                    <li><a href="">contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section id="home">
-        <article>
-            <h3>Sent Request</h3>
-            <form>
-                <label >
-                    <input type="text" name="name">
-                </label>
-                <label>
-                    <input type="email">
-                </label>
-                <input type="submit" value="Submit">
-            </form>
-        </article>
-        <aside>
-            <img src="img/2.png"></img>
-        </aside>
+        <div class="bg">            
+            <div class="main-bg">
+                <img src="img/bg/top.png"></img>
+            </div>
+        </div>
+        <div class="home-content container">
+            <article>
+                <div class="title">
+                    <h3>Sent Request</h3>
+                    <form>
+                    <label >
+                        <input type="text" placeholder="INPUT YPUR NAME">
+                    </label>
+                    <label>
+                        <input type="email" placeholder="EMAIL">
+                    </label>
+                    <input type="submit" value="Submit">
+                </form>
+                </div>
+
+            </article>
+            <aside>
+                   <img src="img/2.png"></img>
+            </aside>
+        </div>
     </section>
-    <section id="requirement">
+    <section id="requirement" class="container">
         <h2>our requirement</h2>
             <div></div>
             <div class="block-1">
@@ -53,7 +66,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quibusdam ipsam quidem saepe.</p>
             </div>
     </section>
-    <section id="offer">
+    <section id="offer" class="container">
         <div>
             <img src="img/3.png" alt="">
             <p>CAREER GROWS</p>
@@ -79,7 +92,7 @@
             <p> English lessons</p>
         </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="container">
         <h2>Contacts</h2>
         <article>
             <h3>Sent Request</h3>
@@ -108,9 +121,9 @@
     <section id="map">
         
     </section>
-    <footer>
+    <footer class="container">
         <h3>Create by MykhailoDulyba</h3>
     </footer>
-    
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

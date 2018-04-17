@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Jua');
+body{
+    margin: 0;
+    
+}
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+header{
+    position: relative;
+}
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width:100%;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+nav ul li {
+    display:inline-block;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding-right: 60px;
+    text-decoration: none;
+    font-family: 'Jua', sans-serif;
+}
+#home{
+   max-width: 1980px;
+   margin:auto;
+   position: relative;
+}
+.bg{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.main-bg{
+    grid-column: 2/3;
+}
+.main-bg img{
+    width: 100%;
+    height: 750px;
+}
+.home-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    
+}
+.title{
+    text-align: center;
+}
+.title h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Jua', sans-serif;
+}
+.title form label input{
+    border: none;
+    border-bottom: 2px solid red;
+    outline:none;
+}
+.title form input[type="submit"]{
+    outline: none;
+    color: #fff;
+    padding: 15px 49px;
+    background: #FF606A;
+    border: none;
+    text-decoration: none;
+    font-family: 'Jua', sans-serif;
+}
+.home-content article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 150px;
+}
+.home-content article form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.home-content article form label{
+    padding: 20px 0;
+}
+.home-content aside{
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+.home-content aside img{
+    width: 100%;
+}

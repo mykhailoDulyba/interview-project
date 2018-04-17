@@ -54,6 +54,7 @@ nav ul li a{
 .home-content{
     display:grid;
     grid-template-columns:1fr 1fr;
+    padding-bottom: 200px;
     
 }
 .title{
@@ -66,17 +67,18 @@ nav ul li a{
 }
 .title form label input{
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #5ED9C6;
     outline:none;
 }
 .title form input[type="submit"]{
     outline: none;
     color: #fff;
-    padding: 15px 49px;
+    padding: 10px 50px;
     background: #FF606A;
     border: none;
     text-decoration: none;
     font-family: 'Jua', sans-serif;
+    text-transform: uppercase;
 }
 .home-content article{
     display: flex;
@@ -103,4 +105,37 @@ nav ul li a{
 }
 .home-content aside img{
     width: 100%;
+}
+#requirement{
+    overflow: hidden;
+    max-width: 1980px;
+    margin: auto;
+}
+.requirement-bg{
+    display: grid;
+    grid-template-columns: 7fr 202px 0.5fr;
+    position: absolute;
+    z-index: -1;
+}
+.requirement-bg-right{
+    grid-column: 3/4;
+    align-self: end;
+}
+.requirement-bg-right img{
+    width: 197%;
+    height: 123%;
+}
+.requirement-bg-left{
+
+}
+.requirement-bg-left img{
+    width: 100%;
+    height: 100%;
+}
+
+.block-1, .block-2, .block-3{
+    background: #fff;
+    padding: 60px 30px;
+    max-width: 350px;
+    margin:20px;
 }

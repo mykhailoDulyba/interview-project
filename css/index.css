@@ -133,6 +133,7 @@ width: 100%;
     height: 980px;
 }
 .req-content h3{
+    padding: 10px;
     text-transform: uppercase;
     font-size: 24px;
     font-family: 'Jua', sans-serif;
@@ -194,24 +195,46 @@ width: 100%;
     
 }
 #contact{
-    background-position: center;
-    background-size: cover;
+    position: relative;
     max-width: 1980px;
     margin: auto;
-    background: url(../img/bg/contacts.png);
-    background-repeat: no-repeat;
+}
+.contact-bg{
+    width: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.contact-bg img{
+    width: 100%;
+    height: 530px;
 }
 .contact-inner{
+    padding-top: 120px;
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
 }
 .contact-inner h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Jua', sans-serif;
     text-align: center;
     grid-column: 1/3;
+    color: #fff;
+}
+.contact-inner article{
+    margin-bottom: 44px;
 }
 .contact-inner article h3{
     text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Jua', sans-serif;
+    color: #fff;
+    font-weight: 300;
 }
 .contact-inner article form{
     display: flex;
@@ -221,6 +244,7 @@ width: 100%;
 }
 .contact-inner article form label{
     padding: 20px 0;
+    margin-bottom: 14px;
 }
 .contact-inner article form input[type="submit"] {
     outline: none;
@@ -233,9 +257,35 @@ width: 100%;
     text-transform: uppercase;
 }
 .contact-inner article form label input{
+    width: 242px;
     border: none;
+    background: transparent;
     border-bottom: 2px solid #5ED9C6;
     outline: none;
+}
+.contact-inner aside{
+    margin: 0 120px 44px 0;
+}
+.contact-inner aside h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Jua', sans-serif;
+    color: #fff;
+}
+.contact-inner aside h4:first-of-type{
+    margin-top: 33px;
+}
+.contact-inner aside h4{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Jua', sans-serif;
+    color: #fff;
+}
+.social-link{
+    margin-top: 44px;
+}
+.social-link img:nth-of-type(2){
+    padding: 0 20px;
 }
 #map{
     max-width: 1980px;
@@ -249,11 +299,11 @@ footer{
     margin-top: -5px;
     display: flex;
     height: 74px;
-    background-position: center;
-    background-size: cover;
     max-width: 1980px;
     margin: auto;
     background: url(../img/bg/footer.png);
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;

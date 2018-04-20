@@ -48,8 +48,9 @@
         border: none;
         border-bottom: 2px solid #fff;
     }
-    .home-content aside img {
+    .home-content aside {
         padding: 10px;
+        
     }
     
     
@@ -59,7 +60,7 @@
     
     
     #requirement {
-        height: 1150px;
+        height: 1200px;
     }
     .req-content h3{
         text-align: center;

@@ -20,13 +20,6 @@ header{
 #burger-menu{
     display: none;
 }
-.menu-active{
-   opacity: 1; 
-}
-nav{
-    opacity: 0;
-    transition: 0.5s;
-}
 nav ul {
     display: flex;
     justify-content: flex-end;

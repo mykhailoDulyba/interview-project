@@ -15,6 +15,10 @@ header{
     top: 10px;
     left: 0;
     width:100%;
+    z-index: 5;
+}
+#burger-menu{
+    display: none;
 }
 nav ul {
     display: flex;
@@ -27,7 +31,7 @@ nav ul li {
 nav ul li a{
     color: #fff;
     font-size: 18px;
-    padding-right: 60px;
+    padding-right: 47px;
     text-decoration: none;
     font-family: 'Jua', sans-serif;
 }
@@ -69,6 +73,7 @@ nav ul li a{
     border: none;
     border-bottom: 2px solid #5ED9C6;
     outline:none;
+    background: transparent;
 }
 .title form input[type="submit"]{
     outline: none;
@@ -185,6 +190,7 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 #offer>div>p{
     text-transform: uppercase;
@@ -198,6 +204,7 @@ width: 100%;
     position: relative;
     max-width: 1980px;
     margin: auto;
+    height: 530px;
 }
 .contact-bg{
     width: 100%;
@@ -267,6 +274,7 @@ width: 100%;
     margin: 0 120px 44px 0;
 }
 .contact-inner aside h3{
+    text-align: center;
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'Jua', sans-serif;
@@ -282,7 +290,9 @@ width: 100%;
     color: #fff;
 }
 .social-link{
+    display: flex;
     margin-top: 44px;
+    justify-content: center;
 }
 .social-link img:nth-of-type(2){
     padding: 0 20px;
